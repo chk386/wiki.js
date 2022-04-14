@@ -2,7 +2,7 @@
 title: Agile2
 description: 
 published: true
-date: 2022-04-14T17:27:22.242Z
+date: 2022-04-14T17:29:50.948Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-14T11:29:19.513Z
@@ -428,6 +428,7 @@ echo "Hello, world!" | tee a.txt
 # 이제 아웃풋은 대소문자를 유지하지만 파일에는 오직 소문자들만 가져가길 원한다. 프로세스 대체 방식으로 할수 있다.
 echo "Hello, world!" | tee >(tr '[:upper:]' '[:lower:]' > a.txt)
 ```
-  
-- 참고 : [learnshell](https://www.learnshell.org/)
-- 한글 참고 : [mus896님 github pages](https://mug896.github.io/bash-shell/index.html)
+
+> - 참고 : [learnshell](https://www.learnshell.org/)
+> - 한글 참고 : [mus896님 github pages](https://mug896.github.io/bash-shell/index.html)
+{.is-info}
