@@ -2,7 +2,7 @@
 title: 나의 위키
 description: 
 published: true
-date: 2022-04-15T07:46:03.462Z
+date: 2022-04-15T07:47:01.469Z
 tags: agile
 editor: markdown
 dateCreated: 2022-04-13T15:01:41.006Z
