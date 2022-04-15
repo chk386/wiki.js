@@ -2,8 +2,8 @@
 title: oh-my-zsh 우분투 설치 & 플러그인 셋팅
 description: 
 published: true
-date: 2022-04-15T15:48:09.503Z
-tags: settings, zsh, shell, ubuntu
+date: 2022-04-15T16:37:38.878Z
+tags: settings, shell, ubuntu, zsh
 editor: markdown
 dateCreated: 2022-04-15T15:48:09.502Z
 ---
@@ -54,5 +54,16 @@ sudo apt install fd-find
 ln -s $(which fdfind) ~/.local/bin/fd
 # .zshrc 수정 
 export PATH=$HOME/.local/bin:$PATH
+
+```
+
+
+### zsh plugins
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# ~/.zshrc 플러그인 추가
+plugins=(  zsh-autosuggestions zsh-syntax-highlighting   )
+```
 
 ```
