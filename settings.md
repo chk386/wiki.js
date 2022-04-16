@@ -2,7 +2,7 @@
 title: oh-my-zsh 우분투 설치 & 플러그인 셋팅
 description: 
 published: true
-date: 2022-04-16T16:17:41.256Z
+date: 2022-04-16T16:42:24.876Z
 tags: settings, shell, ubuntu, zsh
 editor: markdown
 dateCreated: 2022-04-15T15:48:09.502Z
@@ -84,10 +84,14 @@ sudo mv ./man/* /usr/share/man/man1/
 cd ..
 rm -rf exa
 
+# ~/.zshrc 하단에 아래 추가 
+unalias ll
+ll() { exa -alh --icons $1 }
+
 # 아이콘이 나오도록 nerd-fonts를 설치하자.
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
 # powershell에서 윈도우에 fonts를 추가하자
 cd nerd-fonts
 ./install.ps1
-
+# 윈도우 터미널에서 폰트를 nerdfont로 반드시 변경할것!
 ```
