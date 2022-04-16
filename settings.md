@@ -2,7 +2,7 @@
 title: oh-my-zsh 우분투 설치 & 플러그인 셋팅
 description: 
 published: true
-date: 2022-04-15T16:37:38.878Z
+date: 2022-04-16T15:54:01.177Z
 tags: settings, shell, ubuntu, zsh
 editor: markdown
 dateCreated: 2022-04-15T15:48:09.502Z
@@ -50,6 +50,7 @@ plugins=(  fzf   )
 ### bat & fd
 ```bash
 sudo apt install bat
+ln -s $(which batcat) ~/.local/bin/bat
 sudo apt install fd-find
 ln -s $(which fdfind) ~/.local/bin/fd
 # .zshrc 수정 
@@ -64,6 +65,28 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/zsh-autos
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # ~/.zshrc 플러그인 추가
 plugins=(  zsh-autosuggestions zsh-syntax-highlighting   )
+
+# Powerlever10K
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
 ```
+
+### exa v0.10.1
+```bash
+sudo apt install exa #  wsl ubuntu 20.04.4는 apt에 없다. 아래로 대체하자.
+mkdir ~/exa
+wget https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip
+cd ~/exa
+unzip exa-linux-x86_64-v0.10.1.zip
+sudo mv ./bin/exa /usr/local/bin
+sudo mv ./man/* /usr/share/man/man1/
+cd ..
+rm -rf exa
+
+# 아이콘이 나오도록 nerd-fonts를 설치하자.
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
+# powershell에서 윈도우에 fonts를 추가하자
+cd nerd-fonts
+./install.ps1
 
 ```
