@@ -2,7 +2,7 @@
 title: oh-my-zsh 우분투 설치 & 플러그인 셋팅
 description: 
 published: true
-date: 2022-04-16T15:54:01.177Z
+date: 2022-04-16T16:17:41.256Z
 tags: settings, shell, ubuntu, zsh
 editor: markdown
 dateCreated: 2022-04-15T15:48:09.502Z
@@ -50,7 +50,8 @@ plugins=(  fzf   )
 ### bat & fd
 ```bash
 sudo apt install bat
-ln -s $(which batcat) ~/.local/bin/bat
+# Set alias cat='batcat' in ~/.zsrhc
+
 sudo apt install fd-find
 ln -s $(which fdfind) ~/.local/bin/fd
 # .zshrc 수정 
