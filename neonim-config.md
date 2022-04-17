@@ -2,7 +2,7 @@
 title: neovim으로 개발환경 구축하기
 description: 
 published: true
-date: 2022-04-17T17:20:01.668Z
+date: 2022-04-17T17:22:26.490Z
 tags: linux, lsp, neovim, nvim, vi, vim
 editor: markdown
 dateCreated: 2022-04-16T14:13:23.559Z
