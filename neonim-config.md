@@ -2,7 +2,7 @@
 title: neovim으로 개발환경 구축하기
 description: 
 published: true
-date: 2022-04-16T17:02:47.039Z
+date: 2022-04-17T07:31:45.267Z
 tags: linux, lsp, neovim, nvim, vi, vim
 editor: markdown
 dateCreated: 2022-04-16T14:13:23.559Z
@@ -25,6 +25,8 @@ rm -rf nvim
 
 
 ```
+
+https://www.youtube.com/watch?v=FW2X1CXrU1w&t=876s 이거보고하자
 
 
 https://github.com/nikvdp/nvim-lsp-config#neovim-with-lsp-and-tree-sitter
