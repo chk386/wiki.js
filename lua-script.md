@@ -2,11 +2,13 @@
 title: lua 설치 및 기본
 description: 
 published: true
-date: 2022-04-23T17:28:50.509Z
+date: 2022-04-23T17:42:34.469Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-23T15:56:39.406Z
 ---
+
+neovim에서 사용되는 lua에 대해서 알아보자.
 
 # 설치
 ```bash
@@ -169,8 +171,13 @@ end
 ```
 
 ## Module
+```bash
+# 쉘에서 lua를 먼저 하나 만들자
+echo 'local aa = {}\nfunction aa.print(a) print(a) end\n return aa' >> shopby.lua
+```
 
-
-
-
+```lua
+txt = require("shopby") -- shopby.lua를 load하여 txt에 할당
+print(txt)
+```
 
