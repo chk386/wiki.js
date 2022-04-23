@@ -2,7 +2,7 @@
 title: lua 설치 및 기본
 description: 
 published: true
-date: 2022-04-23T17:27:59.714Z
+date: 2022-04-23T17:28:50.509Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-23T15:56:39.406Z
@@ -21,7 +21,7 @@ lua hello.lua
 
 # 문법 & 특징
 ## Global&Local Scope
-[참고](https://www.nobakee.com/20)
+[참고](https://www.youtube.com/watch?v=tiJlxyGumS0&t=133s)
 ```lua
 a = 3 -- global
 print(a)
