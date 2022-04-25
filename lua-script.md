@@ -2,7 +2,7 @@
 title: lua 설치 및 기본
 description: 
 published: true
-date: 2022-04-25T03:19:31.818Z
+date: 2022-04-25T05:48:00.814Z
 tags: 
 editor: markdown
 dateCreated: 2022-04-23T15:56:39.406Z
